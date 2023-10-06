@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadorav2.MainPage">
+
+    <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#F0F0F0" HeightRequest="550">
+        <Label x:Name="ResultadoLabel" Text="0" FontSize="48" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,16,0" />
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            
+            <Button Text="C" Clicked="LimpiarPantalla" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="0" Grid.Column="0" CornerRadius="10" />
+            <Button Text="AC" Clicked="BorrarUnNumero" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="0" Grid.Column="1" CornerRadius="10" />
+            <Button Text="/" Clicked="Operacion" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="0" Grid.Column="2" CornerRadius="10" />
+            <Button Text="x" Clicked="Operacion" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="0" Grid.Column="3" CornerRadius="10" />
+
+        
+            <Button Text="7" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="1" Grid.Column="0" CornerRadius="10" />
+            <Button Text="8" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="1" Grid.Column="1" CornerRadius="10" />
+            <Button Text="9" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="1" Grid.Column="2" CornerRadius="10" />
+            <Button Text="-" Clicked="Operacion" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="1" Grid.Column="3" CornerRadius="10" />
+
+
+            <Button Text="4" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="2" Grid.Column="0" CornerRadius="10" />
+            <Button Text="5" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="2" Grid.Column="1" CornerRadius="10" />
+            <Button Text="6" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="2" Grid.Column="2" CornerRadius="10" />
+            <Button Text="+" Clicked="Operacion" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="2" Grid.Column="3" CornerRadius="10" />
+
+
+            <Button Text="1" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="3" Grid.Column="0" CornerRadius="10" />
+            <Button Text="2" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="3" Grid.Column="1" CornerRadius="10" />
+            <Button Text="3" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="3" Grid.Column="2" CornerRadius="10" />
+            <Button Text="=" Clicked="Igual" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="3" Grid.Column="3" CornerRadius="10" />
+
+
+            <Button Text="0" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="4" Grid.Column="0" CornerRadius="10" />
+            <Button Text="00" Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="4" Grid.Column="1" CornerRadius="10" />
+            <Button Text="." Clicked="Numero" BackgroundColor="Black" TextColor="White" FontSize="32" Grid.Row="4" Grid.Column="2" CornerRadius="10" />
+            <Button Text="DEL" Clicked="BorrarUnNumero" BackgroundColor="OrangeRed" TextColor="White" FontSize="32" Grid.Row="4" Grid.Column="3" CornerRadius="10" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
