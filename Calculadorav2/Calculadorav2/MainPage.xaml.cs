@@ -34,6 +34,9 @@ namespace Calculadorav2
             {
                 ResultadoLabel.Text += numero;
             }
+
+            
+            OperacionLabel.Text += numero;
         }
 
         private void Operacion(object sender, EventArgs e)
@@ -49,6 +52,9 @@ namespace Calculadorav2
             valor1 = double.Parse(ResultadoLabel.Text);
             operador = nuevoOperador;
             limpiarPantalla = true;
+
+            // Actualizar la etiqueta de la operación
+            OperacionLabel.Text = $"{valor1} {operador} ";
         }
 
         private void Igual(object sender, EventArgs e)
@@ -60,6 +66,7 @@ namespace Calculadorav2
         private void LimpiarPantalla(object sender, EventArgs e)
         {
             ResultadoLabel.Text = "0";
+            OperacionLabel.Text = "";
             valor1 = 0;
             valor2 = 0;
             operador = "";

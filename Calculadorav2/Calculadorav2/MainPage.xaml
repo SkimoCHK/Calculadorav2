@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Calculadorav2.MainPage">
+             x:Class="Calculadorav2.MainPage"
+             BackgroundColor="Black">
 
-    <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#F0F0F0" HeightRequest="550">
+    <StackLayout  VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Black" HeightRequest="550">
+        <Label x:Name="OperacionLabel" Text="" FontSize="24" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,16,0" />
         <Label x:Name="ResultadoLabel" Text="0" FontSize="48" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,16,0" />
 
         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
